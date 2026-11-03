@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Home Work</title>
+        <style>
+            .hello{
+                display:grid;
+                grid-template-areas:"header header header" 
+                                    "sidebar nav mainprojectgallery"
+                                    "footer footer footer";
+                grid-template-columns:1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+                gap:10px;
+
+            }
+            .header{
+
+                grid-area: header;
+                border:2px solid black;
+                padding:10px;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+            }
+            .sidebar{
+                grid-area: sidebar;
+                border:2px solid black;
+                padding:10px;
+                text-align:center;
+
+            }
+            .nav{
+                grid-area: nav;
+                border:2px solid black;
+                padding:10px;
+                text-align:center;
+
+            }
+            .mainprojectgallery{
+                grid-area: mainprojectgallery;
+                border:2px solid black;
+                padding:10px;
+                gap;2px;
+                text-align:center;
+                display:grid;
+                grid-template-columns: repeat(4,minmax(180px,1fr));
+                grid-template-rows: repeat(autofill,minmax(180px,1fr));
+
+                
+
+            }
+            .card{
+                border: 1px solid black;
+                
+            }
+            .featuredcard{
+                border: 1px solid black;
+                
+                grid-column: 2/4;
+            }
+            .footer{
+                grid-area: footer;
+                border:2px solid black;
+                padding:10px;
+                text-align:center;
+
+            }
+            
+        </style>
+    </head>
+    <body>
+        <div class="hello">
+        <div class="header">Sravanth</div>
+        <div class="sidebar">Sidebar</div>
+        <div class="nav">Nav</div>
+        <div class="mainprojectgallery">
+        <div class="card">Card 1</div>
+        <div class="featuredcard">featuredCard 2</div>
+        <div class="card">Card 3</div>
+        <div class="card">Card 4</div>
+        <div class="card">Card 5</div>
+        <div class="card">Card 6</div>
+        <div class="card">Card 7</div>
+        <div class="card">Card 8</div>
+        </div>
+        <div class="footer">Footer</div>
+        </div>
+    </body>
+</html>
