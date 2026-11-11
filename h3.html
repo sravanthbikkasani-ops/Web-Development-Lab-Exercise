@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Responsive Nav Bar and Card Grid</title>
+        <title>Responsive Nav Bar and Card Grid Using flexbox</title>
     </head>
     <style>
         .cards{
-            display:grid;
+            display:flex;
+            flex-wrap:wrap;
             justify-content: center;
             
             gap:10px;
@@ -19,20 +20,25 @@
             border:2px solid black;
             padding: 20px;
             text-align:center;
-            width:120px;
+            flex:1 1 200px;
         }
         .cardas1{
-            display: grid;
-            justify-self: grid-row-end;
+            
+            
             border:2px solid black;
             padding: 20px;
             text-align:center;
-            width:120px;
+            
 
         }
     </style>
     <body>
-        <nav class="cards">
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="cards">
         <div class="cardas1">Card 1</div>
         <div class="card">Card 2</div>
         <div class="card">Card 3</div>
@@ -41,7 +47,7 @@
         <div class="card">Card 6</div>
         <div class="card">Card 7</div>
         <div class="card">Card 8</div>
-        </nav>
+        </div>
 
         
 
